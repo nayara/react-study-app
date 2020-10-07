@@ -5,5 +5,5 @@ import App from './App';
 test('renders home page', () => {
   render(<App />);
 
-  expect(screen.getByRole('heading', { name: 'Welcome!'})).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: 'Seja bem vinda!'})).toBeInTheDocument();
 });
