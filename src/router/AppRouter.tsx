@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Home, Login } from '../pages';
+import { Home, Authentication } from '../pages';
 
 const AppRouter: FC = ({ children }) => {
   return (
@@ -12,8 +12,8 @@ const AppRouter: FC = ({ children }) => {
             <Home />
           </Route>
 
-          <Route path='/login'>
-            <Login />
+          <Route path='/auth'>
+            <Authentication />
           </Route>
         </Switch>
       </Router>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { LoginStrings } from './constants';
+import { AuthenticationStrings } from './constants';
 
 interface GoogleError {
   error: string;
@@ -25,17 +25,17 @@ const renderGoogleLoginButton = () => {
   });
 };
 
-const Login = () => {
+const Authentication = () => {
   useEffect(() => {
     window.addEventListener('google-loaded', () => renderGoogleLoginButton());
   }, []);
 
   return (
     <>
-      <h1>{LoginStrings.signInWithGoogle}</h1>
+      <h1>{AuthenticationStrings.signInWithGoogle}</h1>
       <div id='login-button'></div>
     </>
   );
 };
 
-export default Login;
+export default Authentication;

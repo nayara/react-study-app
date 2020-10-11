@@ -1,7 +1,7 @@
 import React from 'react';
 import { act, render, screen } from '@testing-library/react';
-import Login from './Login';
-import { LoginStrings } from './constants';
+import Login from './Authentication';
+import { AuthenticationStrings } from './constants';
 
 describe('Login', () => {
   it('render google login button', () => {
@@ -14,7 +14,7 @@ describe('Login', () => {
     render(<Login />);
 
     expect(
-      screen.getByRole('heading', { name: LoginStrings.signInWithGoogle })
+      screen.getByRole('heading', { name: AuthenticationStrings.signInWithGoogle })
     ).toBeInTheDocument();
 
     act(() => {
