@@ -9,6 +9,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <meta name="google-signin-client_id" content="557362487418-hfi2fpdrd7kd0orm0qq5p4gcbd25b8sa.apps.googleusercontent.com">
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -28,6 +29,13 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="https://apis.google.com/js/platform.js?onload=triggerGoogleLoaded" async defer></script>
+    <script type="text/javascript">
+        function triggerGoogleLoaded() {
+            console.log("google event loaded");
+            window.dispatchEvent(new Event('google-loaded'));
+        }
+    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
