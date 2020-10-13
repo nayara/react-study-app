@@ -16,6 +16,9 @@ const Authentication = () => {
       <button id='login-button' onClick={logoutGoogle}>
         {AuthenticationStrings.logoutButton}
       </button>
+      <button id='anus-button' onClick={() => alert("Botao pegado")}>
+        PEGA NO BUTAO
+      </button>
     </>
   );
 };
