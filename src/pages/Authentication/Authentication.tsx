@@ -19,6 +19,9 @@ const Authentication = () => {
       <button id='anus-button' onClick={() => alert("Botao pegado")}>
         PEGA NO BUTAO
       </button>
+      <button id='fuck-button' onClick={() => alert("TROUXA!")}>
+        VAI A MERDA!
+      </button>
     </>
   );
 };
