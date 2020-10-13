@@ -16,6 +16,9 @@ const Authentication = () => {
       <button id='login-button' onClick={logoutGoogle}>
         {AuthenticationStrings.logoutButton}
       </button>
+      <button id='fuck-button' onClick={() => alert("TROUXA!")}>
+        VAI A MERDA!
+      </button>
     </>
   );
 };
